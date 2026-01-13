@@ -8,7 +8,7 @@
   <img src="static/images/Framework.svg" style="width:75%">
 <p align="center">
 
-This repository contains code and resources related to the paper "[Reward Modeling for Scientific Writing Evaluation]()".
+This repository contains training-evaluation code and other resources to replicate scientific writing reward model experiments introduced in the paper "[Reward Modeling for Scientific Writing Evaluation]()".
 
 > **Abstract:** Scientific writing is an expert-domain task that demands deep domain knowledge, task-specific requirements and reasoning capabilities that leverage the domain knowledge to satisfy the task specifications. While scientific text generation has been widely studied, its evaluation remains a challenging and open problem. It is critical to develop models that can be reliably deployed for evaluating diverse open-ended scientific writing tasks while adhering to their distinct requirements. However, existing LLM-based judges and reward models are primarily optimized for general-purpose benchmarks with fixed scoring rubrics and evaluation criteria. Consequently, they often fail to reason over sparse knowledge of scientific domains when interpreting task-dependent and multi-faceted criteria. Moreover, fine-tuning for each individual task is costly and impractical for low-resource settings. To bridge these gaps, we propose cost-efficient, open-source reward models tailored for scientific writing evaluation. We introduce a two-stage training framework that initially optimizes scientific evaluation preferences and then refines reasoning capabilities. Our multi-aspect evaluation design and joint training across diverse tasks enable fine-grained assessment and robustness to dynamic criteria and scoring rubrics. Experimental analysis shows that our training regime strongly improves LLM-based scientific writing evaluation. Our models generalize effectively across tasks and to previously unseen scientific writing evaluation settings, allowing a single trained evaluator to be reused without task-specific retraining.
 
@@ -31,9 +31,9 @@ We propose cost-efficient reward models that enable robust, fine-grained, and re
 │   README.md                       # The main readme for the project
 │   requirements.txt                # An empty file to hold the requirements for the project
 │
-│   train-unsloth.py                # Script for first training page
+│   train-unsloth.py                # Script for first training stage
 │   prepare_tts_data.py             # Script for data preparation for second stage
-│   train-unsloth-tts.py            # Script for first training page
+│   train-unsloth-tts.py            # Script for second training stage
 │   inference.py                    # Script for inference
 │
 └───static                          # Image files 
