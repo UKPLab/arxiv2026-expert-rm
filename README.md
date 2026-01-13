@@ -36,6 +36,8 @@ We propose cost-efficient reward models that enable robust, fine-grained, and re
 │   train-unsloth-tts.py            # Script for second training stage
 │   inference.py                    # Script for inference
 │
+└───example-data                    # Sample dataset
+│
 └───static                          # Image files 
 ```
 
