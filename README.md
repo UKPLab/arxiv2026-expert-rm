@@ -1,6 +1,6 @@
 # Reward Modeling for Scientific Writing Evaluation
 
-[![Arxiv](https://img.shields.io/badge/Arxiv--red?style=flat-square&logo=arxiv&logoColor=white)]()
+[![Arxiv](https://img.shields.io/badge/Arxiv-2601.11374-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.11374)
 [![License](https://img.shields.io/github/license/UKPLab/arxiv2025-expert-eval-rw)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.11-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
@@ -147,10 +147,10 @@ Please use the following citation:
     title       = {Reward Modeling for Scientific Writing Evaluation}, 
     author      = {Furkan \c{S}ahinu\c{c} and Subhabrata Dutta and Iryna Gurevych},
     year        = {2026},
-    eprint      = {},
+    eprint      = {2601.11374},
     archivePrefix={arXiv},
     primaryClass={cs.CL},
-    url         = {https://arxiv.org/abs/}, 
+    url         = {https://arxiv.org/abs/2601.11374}, 
 }
 ```
 
