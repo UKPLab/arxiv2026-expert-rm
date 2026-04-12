@@ -3,6 +3,9 @@
 [![Arxiv](https://img.shields.io/badge/Arxiv-2601.11374-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.11374)
 [![License](https://img.shields.io/github/license/UKPLab/arxiv2025-expert-eval-rw)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.11-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-SciRM--7B-yellow)](https://huggingface.co/UKPLab/SciRM-7B)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-SciRM--Ref--7B-yellow)](https://huggingface.co/UKPLab/SciRM-Ref-7B)
+
 
 <p align="center">
   <img src="static/images/Framework.svg" style="width:75%">
@@ -58,6 +61,18 @@ We use three datasets for experiments. ```final_reward_data.json``` file is the 
   * ```prompted_revision_data.json```: Testing dataset for unseen task experiments.
 
 You can access the dataset by following this [link](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4980).
+
+
+## Models
+
+Our models are publicly available on Hugging Face.
+
+| Model Name | Base Model | Training | Description |
+|---|---|---|---|
+| [SciRM-7B](https://huggingface.co/UKPLab/SciRM-7B) | [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) | Stage 1 | Main model optimizing scientific evaluation preferences |
+| [SciRM-Ref-7B](https://huggingface.co/UKPLab/SciRM-Ref-7B) | [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) | Stage 1 + Stage 2 | Reasoning enchancement via self-reflecion of previous answers |
+
+
 
 ## Training first stage:
 
