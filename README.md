@@ -11,7 +11,7 @@
   <img src="static/images/Framework.svg" style="width:75%">
 <p align="center">
 
-This repository contains training-evaluation code and other resources to replicate scientific writing reward model experiments introduced in the paper "[Reward Modeling for Scientific Writing Evaluation](https://arxiv.org/abs/2601.11374)" at ACL 2026 main conference.
+This repository contains training-evaluation code and other resources to replicate scientific writing reward model experiments introduced in the paper "[Reward Modeling for Scientific Writing Evaluation](https://aclanthology.org/2026.acl-long.567/)" at ACL 2026 main conference.
 
 > **Abstract:** Scientific writing is an expert-domain task that demands deep domain knowledge, task-specific requirements and reasoning capabilities that leverage the domain knowledge to satisfy the task specifications. While scientific text generation has been widely studied, its evaluation remains a challenging and open problem. It is critical to develop models that can be reliably deployed for evaluating diverse open-ended scientific writing tasks while adhering to their distinct requirements. However, existing LLM-based judges and reward models are primarily optimized for general-purpose benchmarks with fixed scoring rubrics and evaluation criteria. Consequently, they often fail to reason over sparse knowledge of scientific domains when interpreting task-dependent and multi-faceted criteria. Moreover, fine-tuning for each individual task is costly and impractical for low-resource settings. To bridge these gaps, we propose cost-efficient, open-source reward models tailored for scientific writing evaluation. We introduce a two-stage training framework that initially optimizes scientific evaluation preferences and then refines reasoning capabilities. Our multi-aspect evaluation design and joint training across diverse tasks enable fine-grained assessment and robustness to dynamic criteria and scoring rubrics. Experimental analysis shows that our training regime strongly improves LLM-based scientific writing evaluation. Our models generalize effectively across tasks and to previously unseen scientific writing evaluation settings, allowing a single trained evaluator to be reused without task-specific retraining.
 
@@ -158,14 +158,17 @@ For testing, you can use `inference.py` with corresponding testing datasets:
 Please use the following citation:
 
 ```
-@misc{sahinuc2026reward,
+@inproceedings{sahinuc2026reward,
     title       = {Reward Modeling for Scientific Writing Evaluation}, 
     author      = {Furkan \c{S}ahinu\c{c} and Subhabrata Dutta and Iryna Gurevych},
     year        = {2026},
-    eprint      = {2601.11374},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL},
-    url         = {https://arxiv.org/abs/2601.11374}, 
+    booktitle   = {Proceedings of the 64nd Annual Meeting of the Association 
+                  for Computational Linguistics (Volume 1: Long Papers)},
+    month       = jul,
+    pages       = {12438--12479},
+    address     = {San Diego, California, United States},
+    publisher   = {Association for Computational Linguistics},
+    url         = {https://aclanthology.org/2026.acl-long.567/}
 }
 ```
 
